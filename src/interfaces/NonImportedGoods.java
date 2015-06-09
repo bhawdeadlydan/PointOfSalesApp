@@ -1,3 +1,4 @@
+package interfaces;
 
 public interface NonImportedGoods {
     double importDutyRate = 0.00;

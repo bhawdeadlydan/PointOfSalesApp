@@ -1,5 +1,7 @@
+import interfaces.NonImportedGoods;
+import interfaces.NonTaxableGoods;
 
-public class NonImportedBook implements NonImportedGoods, NonTaxableGoods{
+public class NonImportedBook implements NonImportedGoods, NonTaxableGoods {
     double price = 0;
     double salesTax = 0;
     double importDutyTax = 0;

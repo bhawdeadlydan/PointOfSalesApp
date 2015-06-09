@@ -1,3 +1,4 @@
+package interfaces;
 
 public interface NonTaxableGoods {
     double basicSalesTaxRate = 0.00;

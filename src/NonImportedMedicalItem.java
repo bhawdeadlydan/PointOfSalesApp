@@ -1,3 +1,5 @@
+import interfaces.NonImportedGoods;
+import interfaces.NonTaxableGoods;
 
 public class NonImportedMedicalItem implements NonTaxableGoods, NonImportedGoods {
 

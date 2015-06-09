@@ -1,3 +1,5 @@
+import interfaces.ImportedGoods;
+import interfaces.NonTaxableGoods;
 
 public class ImportedFoodItem implements ImportedGoods, NonTaxableGoods {
 

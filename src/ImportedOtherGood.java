@@ -1,5 +1,7 @@
+import interfaces.ImportedGoods;
+import interfaces.TaxableGoods;
 
-public class ImportedOtherGood implements TaxableGoods, ImportedGoods{
+public class ImportedOtherGood implements TaxableGoods, ImportedGoods {
     double price = 0;
     double salesTax = 0;
     double importDutyTax = 0;

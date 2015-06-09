@@ -1,3 +1,4 @@
+package interfaces;
 
 public interface TaxableGoods {
     double basicSalesTaxRate = 0.10;
