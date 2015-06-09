@@ -12,8 +12,18 @@ public class ImportedBookTest {
 
         double salesTax = book.salesTax();
 
-        assertThat(salesTax, is(5.00));
+        assertThat(salesTax, is(0.00));
     }
+
+    @Test
+    public void shouldCalculateImportDutyTax() {
+        ImportedBook book = new ImportedBook(50.00);
+
+        double salesTax = book.importDuty();
+
+        assertThat(salesTax, is(2.50));
+    }
+
 
 
 }

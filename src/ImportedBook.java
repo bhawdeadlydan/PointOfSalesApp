@@ -16,6 +16,7 @@ public class ImportedBook implements ImportedGoods, NonTaxableGoods{
 
     @Override
     public double salesTax() {
-        return 0;
+        salesTax += (price * basicSalesTaxRate);
+        return salesTax;
     }
 }
