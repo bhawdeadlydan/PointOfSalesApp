@@ -12,7 +12,7 @@ public class ImportedFoodItemTest {
 
         double salesTax = chocolate.salesTax();
 
-        assertThat(salesTax, is(5.00));
+        assertThat(salesTax, is(0.00));
     }
 
     @Test
@@ -21,6 +21,6 @@ public class ImportedFoodItemTest {
 
         double importDuty = chocolate.importDuty();
 
-        assertThat(importDuty, is(2.75));
+        assertThat(importDuty, is(2.5));
     }
 }

@@ -10,7 +10,16 @@ public class NonImportedFoodItemTest {
 
         double salesTax = chocolate.salesTax();
 
-        assertThat(salesTax, is(5.00));
+        assertThat(salesTax, is(0.00));
+    }
+
+    @Test
+    public void shouldCalculateImportDutyTax() {
+        ImportedFoodItem chocolate = new ImportedFoodItem(50.00);
+
+        double importDuty = chocolate.importDuty();
+
+        assertThat(importDuty, is(0.00));
     }
 
 
