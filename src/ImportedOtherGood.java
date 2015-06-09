@@ -10,12 +10,14 @@ public class ImportedOtherGood implements TaxableGoods, ImportedGoods{
 
     @Override
     public double importDuty() {
-        return 0;
+        importDutyTax = (price + salesTax()) * importDutyRate;
+        return importDutyTax;
     }
 
     @Override
     public double salesTax() {
-        return 0;
+        salesTax += (price * basicSalesTaxRate);
+        return salesTax;
     }
 
 }
