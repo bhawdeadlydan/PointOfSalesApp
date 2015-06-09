@@ -11,7 +11,7 @@ public class ImportedFoodItem implements ImportedGoods, NonTaxableGoods {
 
     @Override
     public double importDuty() {
-        importDutyTax = (price + salesTax) * importDutyRate;
+        importDutyTax = (price + salesTax()) * importDutyRate;
         return importDutyTax;
     }
 
