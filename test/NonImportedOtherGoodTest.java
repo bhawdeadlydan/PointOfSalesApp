@@ -15,4 +15,14 @@ public class NonImportedOtherGoodTest {
         assertThat(salesTax, is(5.00));
     }
 
+    @Test
+    public void shouldCalculateImportDuty() {
+        NonImportedOtherGood otherGood = new NonImportedOtherGood(50.00);
+
+        double importDuty = otherGood.importDuty();
+
+        assertThat(importDuty, is(0.00));
+    }
+
+
 }
