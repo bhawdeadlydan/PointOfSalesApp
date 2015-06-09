@@ -10,7 +10,8 @@ public class ImportedMedicalItem implements NonTaxableGoods, ImportedGoods{
 
     @Override
     public double importDuty() {
-        return 0;
+        importDutyTax = (price + salesTax()) * importDutyRate;
+        return importDutyTax;
     }
 
     @Override

@@ -15,4 +15,13 @@ public class ImportedMedicalItemTest {
         assertThat(salesTax, is(0.00));
     }
 
+    @Test
+    public void shouldCalculateImportDutyTax() {
+        ImportedMedicalItem medical = new ImportedMedicalItem(50.00);
+
+        double importDuty = medical.importDuty();
+
+        assertThat(importDuty, is(2.50));
+    }
+
 }
