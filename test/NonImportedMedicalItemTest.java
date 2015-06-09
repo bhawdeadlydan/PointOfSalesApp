@@ -16,4 +16,14 @@ public class NonImportedMedicalItemTest {
         assertThat(salesTax, is(0.00));
     }
 
+    @Test
+    public void shouldCalculateImportDutyTax() {
+        NonImportedMedicalItem medical = new NonImportedMedicalItem(50.00);
+
+        double importDuty = medical.importDuty();
+
+        assertThat(importDuty, is(0.00));
+    }
+
+
 }
