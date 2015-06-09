@@ -1,11 +1,10 @@
 
-public class NonImportedFoodItem implements NonImportedGoods, NonTaxableGoods{
-
+public class ImportedBook implements ImportedGoods, NonTaxableGoods{
     double price = 0;
     double salesTax = 0;
     double importDutyTax = 0;
 
-    public NonImportedFoodItem(double price) {
+    public ImportedBook(double price) {
         this.price = price;
     }
 
